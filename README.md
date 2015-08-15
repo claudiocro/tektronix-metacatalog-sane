@@ -3,8 +3,8 @@ This is a `SANE` project for a web-app that allows to link tektroniks oscillator
 
 This project is the container for a `Ember` client and a `Sails` server and it's used to speed up development. Release and deploy is managed by the projects themselves.
 
-Server: https://github.com/claudiocro/tektronix-metacatalog-server
-Client: https://github.com/claudiocro/tektronix-metacatalog-client
+* Server: https://github.com/claudiocro/tektronix-metacatalog-server
+* Client: https://github.com/claudiocro/tektronix-metacatalog-client
 
 # Installation:
 If you haven't read https://github.com/artificialio/sane or http://sanestack.com/ then go and do it. This project heavily depends on it.
@@ -115,3 +115,8 @@ sane up --docker --skip-ember
 ```
 
 Visit you app at: http://localhost:1337
+
+* [ember.js](http://emberjs.com/)
+* [ember.js](http://sailsjs.org/)
+* [ember-deploy](http://ember-cli.github.io/ember-cli-deploy/)
+* [semantic-release](https://github.com/semantic-release/semantic-release/)
