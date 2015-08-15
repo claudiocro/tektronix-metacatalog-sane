@@ -1,4 +1,4 @@
-#Tektroniks Metacatalog SANE project
+#Tektronix Metacatalog SANE project
 This is a `SANE` project for a web-app that allows to link tektroniks oscillators models to their appearances in the annual tektroniks catalogs.
 
 This project is the container for a `Ember` client and a `Sails` server and it's used to speed up development. Release and deploy is managed by the projects themselves.
