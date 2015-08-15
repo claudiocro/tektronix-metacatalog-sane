@@ -5,7 +5,7 @@
   ],
   "disableAnalytics": false,
   "database": "disk",
-  "docker": true,
+  "docker": false,
   "verbose": false,
   "skipNpm": false,
   "skipBower": false
