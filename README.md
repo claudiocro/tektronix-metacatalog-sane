@@ -85,5 +85,33 @@ sane up --docker
 
 #Deploy a client locally to docker
 
-...
+Make shure your docker container are running.
+Redirect to REDIS docker container:
+`boot2docker ssh -L 6379:localhost:6379`
 
+To deploy to your docker container (*not yet thought through:*):
+Read this for more information: http://ember-cli.github.io/ember-cli-deploy/docs/v0.4.x/fingerprinting-options-and-staging-environments/
+```
+cd client
+ember deploy --environment=docker
+```
+
+Ignore the errors
+`ember deploy:index --environment docker`
+
+Search for ** in the output console 
+*Uploaded revision: tektronix-metacatalog-client:<sha>*
+
+Activate version:
+```
+ember deploy:activate --revision tektronix-metacatalog-client:<sha> --environment=docker
+cp -R tmp/deploy-dist/ ../server/assets
+```
+
+Start 
+```
+cd ..
+sane up --docker --skip-ember
+```
+
+Visit you app at: http://localhost:1337
