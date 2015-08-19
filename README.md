@@ -6,6 +6,7 @@ This project is the container for a `Ember` client and a `Sails` server and it's
 * Server: https://github.com/claudiocro/tektronix-metacatalog-server
 * Client: https://github.com/claudiocro/tektronix-metacatalog-client
 
+
 # Installation:
 If you haven't read https://github.com/artificialio/sane or http://sanestack.com/ then go and do it. This project heavily depends on it.
 
@@ -38,6 +39,7 @@ npm install
 bower install
 cd ..
 ```
+
 
 ## Server
 The server can be configured to either run on your local machine without any need to install mongodb or any other sql/nosql database on your system or in a docker container.
@@ -88,6 +90,10 @@ To rebuild the node_modules inside the container run:
 docker-compose run server rm -R node_modules
 docker-compose run server npm install
 ```
+
+To redirect your traffic to mongodb run:
+`boot2docker ssh -L 27017:localhost:27017`
+
 
 #Deploy a client locally to docker
 
