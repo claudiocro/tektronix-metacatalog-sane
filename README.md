@@ -83,6 +83,12 @@ rm -r server/node_modules
 sane up --docker
 ```
 
+To rebuild the node_modules inside the container run:
+```
+docker-compose run server rm -R node_modules
+docker-compose run server npm install
+```
+
 #Deploy a client locally to docker
 
 Make shure your docker container are running.
@@ -116,7 +122,10 @@ sane up --docker --skip-ember
 
 Visit you app at: http://localhost:1337
 
+
+## Further Reading / Useful Links
+
 * [ember.js](http://emberjs.com/)
-* [ember.js](http://sailsjs.org/)
+* [sailsjs](http://sailsjs.org/)
 * [ember-deploy](http://ember-cli.github.io/ember-cli-deploy/)
 * [semantic-release](https://github.com/semantic-release/semantic-release/)
